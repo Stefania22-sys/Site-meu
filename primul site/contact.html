@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>Contact</h2>
+
+    <input type="text" id="nume" placeholder="Numele tau"><br><br>
+    <input type="email" id="email" placeholder="Email"><br><br>
+    <textarea id="mesaj" placeholder="Mesaj"></textarea><br><br>
+
+    <button onclick="trimite()">Trimite</button>
+
+</div>
+
+<script>
+function trimite() {
+    var nume = document.getElementById("nume").value;
+    var email = document.getElementById("email").value;
+    var mesaj = document.getElementById("mesaj").value;
+
+    if(nume === "" || email === "" || mesaj === "") {
+        alert("Completeaza toate campurile!");
+    } else {
+        alert("Mesaj trimis cu succes! 😄");
+    }
+}
+</script>
+
+</body>
+</html>

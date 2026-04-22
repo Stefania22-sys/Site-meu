@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-ul meu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><nav>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+</nav>
+
+<div class="container">
+
+    <h1>Bine ai venit!</h1>
+    <p>Acesta este site-ul meu 😄</p>
+
+</div>
+
+<div class="container">
+    <h2>Despre mine</h2>
+    <p>Invat IT si vreau sa devin bun 💪</p>
+</div>
+
+<div class="container">
+    <h2>Contact</h2>
+    <p>Email: exemplu@gmail.com</p>
+</div>
+
+<img src="poza.jpg.jfif"  class="poza">
+<p>Sunt la inceput dar invat rapid</p>
+</div>
+<script>
+function trimite() {
+    let nume = document.getElementById("nume").value;
+    let email = document.getElementById("email").value;
+    let mesaj = document.getElementById("mesaj").value;
+
+    let rezultat = document.getElementById("rezultat");
+
+    if(nume === "" || email === "" || mesaj === "") {
+        rezultat.innerText = "Completeaza toate campurile!";
+    } else {
+        rezultat.innerText = "Mesaj trimis cu succes! 😄";
+    }
+}
+</script>
+</body>
+</html>
+<nav>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+    <a href="login.html">Login</a>
+</nav>
+<a href="contact.html">Contact</a>
+<div class="boxuri">
+    <div class="box">Serviciu 1</div>
+    <div class="box">Serviciu 2</div>
+    <div class="box">Serviciu 3</div>
+</div>

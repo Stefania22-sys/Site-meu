@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Login</h1>
+
+    <input type="text" id="user" placeholder="User"><br><br>
+    <input type="password" id="parola" placeholder="Parola"><br><br>
+
+    <button onclick="verifica()">Login</button>
+    <p id="rezultat"></p>
+
+</div>
+
+<script>
+function verifica() {
+    var user = document.getElementById("user").value;
+    var parola = document.getElementById("parola").value;
+
+    if(user === "admin" && parola === "1234") {
+        alert("Login reusit!");
+        window.location.href = "index.html";
+    } else {
+        alert("Date gresite!");
+    }
+}
+</script>
+
+</body>
+</html>
+<a href="contact.html">Contact</a>
