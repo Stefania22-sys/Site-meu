@@ -1,60 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site-ul meu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body><nav>
-    <a href="index.html">Acasa</a>
-    <a href="despre.html">Despre</a>
-</nav>
+  <meta charset="UTF-8">
+  <title>Beauty Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="container">
-
-    <h1>Bine ai venit!</h1>
-    <p>Acesta este site-ul meu 😄</p>
-
-</div>
-
-<div class="container">
-    <h2>Despre mine</h2>
-    <p>Invat IT si vreau sa devin bun 💪</p>
-</div>
-
-<div class="container">
-    <h2>Contact</h2>
-    <p>Email: exemplu@gmail.com</p>
-</div>
-
-<img src="poza.jpg.jfif"  class="poza">
-<p>Sunt la inceput dar invat rapid</p>
-</div>
-<script>
-function trimite() {
-    let nume = document.getElementById("nume").value;
-    let email = document.getElementById("email").value;
-    let mesaj = document.getElementById("mesaj").value;
-
-    let rezultat = document.getElementById("rezultat");
-
-    if(nume === "" || email === "" || mesaj === "") {
-        rezultat.innerText = "Completeaza toate campurile!";
-    } else {
-        rezultat.innerText = "Mesaj trimis cu succes! 😄";
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
     }
-}
-</script>
+
+    header {
+      background: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+    }
+
+    .services {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .contact {
+      background: #f8f8f8;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Beauty Studio</h1>
+</header>
+
+<section class="hero">
+  <h2>Simple. Clean. Beautiful.</h2>
+  <p>I offer professional beauty services for nails and lashes.</p>
+</section>
+
+<section class="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Nails</li>
+    <li>Lashes</li>
+    <li>Eyebrows</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2>Book Now</h2>
+  <p>Contact me on WhatsApp</p>
+  <a class="btn" href="https://wa.me/32469238158">
+</section>
+
+<footer>
+  <p>© 2026 Beauty Studio</p>
+</footer>
+
 </body>
 </html>
-<nav>
-    <a href="index.html">Acasa</a>
-    <a href="despre.html">Despre</a>
-    <a href="login.html">Login</a>
-</nav>
-<a href="contact.html">Contact</a>
-<div class="boxuri">
-    <div class="box">Serviciu 1</div>
-    <div class="box">Serviciu 2</div>
-    <div class="box">Serviciu 3</div>
-</div>
